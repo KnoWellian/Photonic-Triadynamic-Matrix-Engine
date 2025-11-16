@@ -870,7 +870,8 @@ def _test_rendering_engine():
     
     rendered, event = engine.render(wavefunction)
     
-    print(f"  Total probability: {np.sum(np.abs(wavefunction)**2):.6f}")print(f"  Total rendered: {np.sum(rendered):.6f}")
+    print(f"  Total probability: {np.sum(np.abs(wavefunction)**2):.6f}")
+    print(f"  Total rendered: {np.sum(rendered):.6f}")
     print(f"  Entropy change: {event.entropy_change:.6f}")
     print(f"  Collapse position: {event.position}")
     print(f"  Mechanism: {event.mechanism}")
